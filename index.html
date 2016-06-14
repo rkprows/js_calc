@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+    <title>Calculator</title>
+      <link rel='stylesheet' href='stylesheets/style.css' type='text/css' />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+      <script type='text/javascript' src='javascripts/app.js'>
+      </script>
+
+    <body>
+
+      <div class='centered'>
+      <div class='calculator'>
+    	 <h1 class='center' id='header'>JS Calculator</h1>
+      </div>
+  
+  
+
+      <input type='text' id='first_num' placeholder='Enter a number'></input>
+        <div id='calculator'>
+         <div class='center'>
+          <div class='row'>
+            <p id='display' class='screen'></p>
+            <button class='btn' onClick='clearResult();'>Clear All</button>
+            <br /> 
+            <!-- <button class='btn' id='num' onClick='num(7)'>7</button>
+            <button class='btn' id='num' onClick='num(8)'>8</button>
+            <button class='btn' id='num' onClick='num(9)'>9</button> -->
+            <button id='mult'class='btn' onClick='operator(3)'>*</button>
+            <br />
+            <!-- <button class='btn' id='num' onClick='num(4)'>4</button>
+            <button class='btn' id='num' onClick='num(5)'>5</button>
+            <button class='btn' id='num' onClick='num(6)'>6</button> -->
+            <button id='sub'class='btn' onClick='operator(2)'>_</button>
+            <br />
+            <!-- <button class='btn' id='num' onClick='num(1)'>1</button>
+            <button class='btn' id='num' onClick='num(2)'>2</button>
+            <button class='btn' id='num' onClick='num(3)'>3</button> -->
+            <button id='add'class='btn' onClick='operator(1)'>+</button>
+            <br />
+        
+            <!-- <button class='btn' id='num' value='0'>0</button> -->
+            <button id='divide'class='btn' onClick='operator(4)'>/</button>
+            <br />
+            </div>
+         <input type='text' id='second_num' placeholder='Enter a  number'></input>
+        <button class='btn' onClick='calc();'>=</button>
+        </div>
+      </div>
+    </div>
+
+     <h3 id='result'></h3>
+
+
+
+    
+      
+    </body>
+
+  </html>
